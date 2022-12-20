@@ -1,0 +1,209 @@
+
+html {
+  overflow-x:hidden;
+  background-color: #04272c;
+}
+
+.App_img {
+background-image: url("./assets/img/rick&morty.png");
+background-size: auto;
+background-repeat: no-repeat;
+background-position:center center;
+height: 17rem;
+width: auto;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+      }
+
+.App {
+  font-family: 'Roboto', sans-serif;
+  background-color: #04171a;
+}
+
+.App >form {
+text-align: center;
+padding: 0;
+margin: 0;
+}
+
+input {
+  width: 0;
+  height: 35px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: #222;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 50px;
+  transition: all 0.6s ease
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  line-height: 35px;
+  top: 0;
+  right: 0;
+  position: relative;
+  background: #00885f;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+input:hover{
+  width: 240px;
+}
+
+input:focus {
+  width: 240px;
+}
+
+
+.Location-residents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+.resident-card {
+background-color: #062226;
+color: white;
+gap: 10px;
+display: flex;
+flex-direction: column;
+border-radius: 20px;
+}
+
+
+.resident-card_header {
+  position:relative;
+}
+
+.resident-card_status {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border-end-end-radius: 10px; 
+  border-top-right-radius: 10px;
+  background-color: #062226;
+}
+
+.circle {
+  width: 7px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.circle.Alive {
+  background-color: #4AB648;
+}
+
+.circle.Dead {
+  background-color: #B94343;
+}
+
+.circle.unknown {
+  background-color: #938686;
+}
+
+.resident-card_body {
+padding: 20px 20px;
+width: 200px;
+
+}
+
+.resident-card_body > h2 {
+  text-transform: capitalize;
+  margin-top: 0%;
+  margin-bottom: 3%;
+  padding: 0px 0px;
+}
+
+
+.resident-card_body > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-transform: capitalize;
+}
+
+.resident-card_body >ul >li {
+  display: flex;
+  flex-direction: column;
+  color: #7E7E7E;
+  text-transform: capitalize;
+
+}
+
+.resident-card_header > img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.dimensionInfo {
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  font-size: larger;
+}
+
+.dimensionInfo > h2 {
+    padding: 2px 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-transform: capitalize;
+}
+
+.dimensionInfo > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-style: roboto;
+  align-items: center;
+  justify-content: center;
+}
+
+.resident-card_body >ul >li>span {
+  color: white;
+}
+
+.errorMessage {
+  color: #fff;
+  width: max-content;
+  border-radius: 10px;
+  position: absolute;
+  top: 5px;
+  right: -100%;
+  background-color: red;
+  padding: 5px 15px;
+  animation: 0.3s ease-in forwards showError;
+}
+
+.errorMessage p {
+  margin: 0;
+}
+
+@keyframes showError {
+  0%{right: 100%;}
+  50%{right: -50%;}
+  100%{right: 10px;}
+}
+
