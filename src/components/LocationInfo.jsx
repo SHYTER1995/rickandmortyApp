@@ -6,9 +6,9 @@ return (
     <article className='dimensionInfo'>
     <h2>{location?.name}</h2>
     <ul>
-        <li><span>Type:</span>{location?.type}</li>
-        <li><span>Dimension:</span>{location?.dimension}</li>
-        <li><span>Population:</span>{location?.residents.length}</li>
+        <li><span className='SubTitle'>Type:</span>{location?.type}</li>
+        <li><span className='SubTitle'>Dimension:</span>{location?.dimension}</li>
+        <li><span className='SubTitle'>Population:</span>{location?.residents.length}</li>
     </ul>
     </article>
 )

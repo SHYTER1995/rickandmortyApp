@@ -29,6 +29,18 @@ padding: 0;
 margin: 0;
 }
 
+.App > ul {
+  color: white;
+  background-color:#072125;
+  padding:0;
+  margin: 25px 470px;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  display: block;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+}
+
 input {
   width: 0;
   height: 35px;
@@ -160,6 +172,9 @@ width: 200px;
   color: white;
   text-transform: capitalize;
   font-size: larger;
+  border: 1px solid green;
+  margin: 20px 100px;
+  box-shadow: 3px 3px 3px 2px rgba(6, 95, 2, 0.4);
 }
 
 .dimensionInfo > h2 {
@@ -167,12 +182,13 @@ width: 200px;
     margin-left: 20px;
     margin-right: 20px;
     text-transform: capitalize;
+    color: #4AB648;
 }
 
 .dimensionInfo > ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 15px 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -181,8 +197,12 @@ width: 200px;
   justify-content: center;
 }
 
+.SubTitle {
+  color: greenyellow;
+}
+
 .resident-card_body >ul >li>span {
-  color: white;
+  color: greenyellow;
 }
 
 .errorMessage {
